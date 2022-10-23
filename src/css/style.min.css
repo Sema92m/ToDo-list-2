@@ -120,4 +120,8 @@ body {
 .none {
   display: none !important;
 }
+
+.list-group-item span {
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.min.css.map */
