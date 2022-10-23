@@ -71,7 +71,7 @@ function checkEmptyList() {
     if (tasks.length == 0) {
         const emptyListElement = `<li id="emptyList" class="list-group-item empty-list">
         <img src="./img/leaf.svg" alt="Empty" width="48" class="mt-3"/>
-        <div class="empty-list__title">Список дел пуст</div></li>`;
+        <div class="empty-list__title">Lista jest pusta</div></li>`;
         tasksList.insertAdjacentHTML("afterbegin", emptyListElement);
     }
     if (tasks.length > 0) {
@@ -88,7 +88,7 @@ function renderTask(task) {
     const cssClass = task.done ? "task-title task-title--done" : "task-title";
 
     const taskHTML = ` 
-        <li	id="${task.id}" class="list-group-item d-flex justify-content-between task-item">
+        <li	id="${task.id}" class="list-group-item d-flex justify-content-between task-item ps-1 pr-1 overflow-hidden">
             <span class="${cssClass}">${task.text}</span>
             <div class="task-item__buttons">
                 <button	type="button" data-action="done" class="btn-action">
